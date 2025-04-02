@@ -1,10 +1,18 @@
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router";
+import "./App.css";
+import DefaultLayout from "./layouts/DefaultLayout";
+import HomePage from "./pages/HomePage";
+import ProductPage from "./pages/ProductPage";
 
 export function App() {
   return (
-    <>
-      <h1 className='text-black'>Parcel React App</h1>
-      <p>Edit <code>src/App.tsx</code> to get started!</p>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<DefaultLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="product/:id" element={<ProductPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
