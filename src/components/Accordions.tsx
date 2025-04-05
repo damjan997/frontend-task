@@ -17,7 +17,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
     <div className={`border-[#9F938B] pb-6 ${!isLast && "border-b"}`}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="text-[#4D4D4D] w-full flex justify-between items-center text-left text-xl poppins-light leading-[1.6]"
+        className="text-[#4D4D4D] w-full flex justify-between items-center cursor-pointer text-left text-xl poppins-light leading-[1.6]"
       >
         <span>{title}</span>
         <span className="text-[#4D4D4D] text-2xl poppins-light">
@@ -53,7 +53,7 @@ const AccordionSection: React.FC = () => {
   ];
 
   return (
-    <div className="big-container flex flex-col gap-8">
+    <div className="big-container flex flex-col gap-8 md:!pl-17">
       {items.map((item, index) => (
         <div key={index} className="w-full md:w-[48%]">
           <AccordionItem

@@ -1,6 +1,7 @@
 import { useParams } from "react-router";
 import ProductHeroSection from "../components/ProductHeroSection";
 import AccordionSection from "../components/Accordions";
+import ProductCarousel from "../components/ProductCarousel";
 
 function ProductPage() {
   const { id } = useParams();
@@ -8,6 +9,7 @@ function ProductPage() {
     <>
       <ProductHeroSection />
       <AccordionSection />
+      <ProductCarousel />
     </>
   );
 }
