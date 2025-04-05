@@ -119,7 +119,7 @@ function ProductHeroSection() {
             </div>
 
             <div className="flex items-center gap-4 mt-12">
-              <div className="flex items-center border border-black overflow-hidden h-10">
+              <div className="flex items-center border border-black overflow-hidden h-11">
                 <button className="w-10 h-full lato-regular flex justify-center items-center text-lg">
                   -
                 </button>
