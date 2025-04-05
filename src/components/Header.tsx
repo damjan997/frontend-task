@@ -19,7 +19,7 @@ function Header() {
           <img src={logo.pathname} alt="Logo" className="mx-auto md:mx-0" />
         </div>
 
-        <div className="hidden md:flex gap-8 text-sm font-normal md:order-2">
+        <div className="hidden poppins-regular md:flex gap-8 text-sm font-normal md:order-2">
           <Link to="/">Shop</Link>
           <Link to="/">Science</Link>
           <Link to="/">Press</Link>
